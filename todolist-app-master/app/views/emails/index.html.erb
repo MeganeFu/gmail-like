@@ -1,0 +1,7 @@
+
+<%= form_tag(emails_path, method: "post", action: 'create', remote: true) do %>
+ <%= submit_tag 'Recevoir un email', class: "btn btn-outline-dark"%>
+ <% end %>
+
+<%= render "email_table" %>
+

@@ -1,0 +1,24 @@
+<br><br>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Liste emails</th>
+	
+      <th scope="col">Emails selectionnés</th>
+   </tr>
+  </thead>
+
+  <tbody class="email-table">
+		<% @emails.each do |email| %>
+		<tr >
+   <th scope="row"><%= email.id %></th>
+   <th id="object"><%= email.object %></th>
+		<th id="body"><%= email.body %></th>
+   </tr>
+			
+ 	<% end %>
+  </tbody>
+
+</table>
+
